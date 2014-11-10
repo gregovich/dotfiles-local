@@ -12,26 +12,11 @@ function! <SID>SynStack()
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 
-" let g:Powerline_fonts = 1
-
 let g:Powerline_symbols = 'fancy'
 
-" set airline symbols using powerline patched fonts
-" let g:airline_powerline_fonts = 1
-
-" override the fontconfig space character if used
-" if !exists('g:airline_symbols')
-"   let g:airline_symbols = {}
-" endif
-
-"let g:airline_symbols.space = '\ua0'
-
-"let g:tmuxline_powerline_separators = 0
-
-"let g:tmuxline_preset = 'nightly_fox'
 set relativenumber
 set noshowmode
-set undofile
+"set undofile
 
 if has("autocmd")
   filetype on
