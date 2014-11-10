@@ -1,0 +1,25 @@
+# recommended by brew doctor
+export PATH="$HOME/.rbenv/bin:$PATH"
+# if command line tools are not working properly, uncomment line below.
+#export PATH="/Library/Developer/CommandLineTools/usr/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export GOPATH="$HOME"
+# set architecture flags
+export ARCHFLAGS="-arch x86_64"
+eval "$(rbenv init - --no-rehash)"
+
+export DOCKER_TLS_VERIFY=1
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/gpz/.boot2docker/certs/boot2docker-vm
+
+# could not get tmux status line to display git statuses
+# PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %)'
+#source /Users/gpz/.custom/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+setopt auto_cd
+cdpath=($HOME/Projects $HOME/.custom)
+
+export PATH="$HOME/.bin:$PATH"
+
+export PATH="$PATH:/usr/local/lib/node_modules"
+source $(brew --prefix nvm)/nvm.sh

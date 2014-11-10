@@ -1,0 +1,22 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+	autocrlf = true
+[user]
+	name = Gregovich
+	email = gregovich.nospam@gmail.com
+[push]
+	default = simple
+[branch]
+	autosetuprebase = always
+[rerere]
+	enabled = true
+[color]
+	ui = true
+[alias]
+	s = status -s
+	lg = log --oneline --decorate --all --graph

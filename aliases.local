@@ -1,0 +1,18 @@
+# Octopress Shortcuts
+alias og="bundle exec rake generate"
+alias ow="bundle exec rake watch"
+alias op="bundle exec rake preview"
+
+# Bundle exec shortcut
+alias br="bundle exec rake"
+
+# Check sha256 sums
+alias chk256="openssl dgst -sha256"
+alias mgodb="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongod"
+alias hdi="hdiutil"
+alias lara="~/.composer/vendor/bin/laravel"
+alias pake="php artisan"
+alias rbi="CC=/usr/bin/gcc rbenv install"
+alias vm="ssh $1"
+alias grep="ggrep"
+alias pstart="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
