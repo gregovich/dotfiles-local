@@ -5,7 +5,7 @@
 	logallrefupdates = true
 	ignorecase = true
 	precomposeunicode = true
-	autocrlf = true
+	autocrlf = false
 [user]
 	name = Gregovich
 	email = gregovich.nospam@gmail.com

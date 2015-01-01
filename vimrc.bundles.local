@@ -3,5 +3,4 @@
 Bundle 'brendonrapp/smyck-vim'
 "Bundle 'bling/vim-airline'
 Bundle 'Lokaltog/vim-powerline'
-"Bundle 'edkolev/tmuxline.vim'
 Bundle 'erikw/tmux-powerline'

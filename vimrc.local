@@ -23,3 +23,23 @@ if has("autocmd")
   filetype indent on
   filetype plugin on
 endif
+
+nnoremap : ;
+nnoremap ; :
+
+" lightline setup
+" let g:lightline = {
+  " \ 'colorscheme': 'wombat',
+  " \ 'component': {
+  " \   'readonly': '%{&readonly?"⭤":""}',
+  " \ },
+  " \ 'separator': { 'left': '⮀', 'right': '⮂' },
+  " \ 'subseparator': { 'left': '⮁', 'right': '⮃' }
+  " \ }
+au BufRead,BufNewFile *.PRG set filetype=html
+
+" override the maroon colorcolumn to lightgreen
+set textwidth=80
+set colorcolumn=+1
+hi colorcolumn ctermbg=lightgreen guibg=#CDEE69
+
